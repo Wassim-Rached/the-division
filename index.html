@@ -17,7 +17,15 @@
     <title>The Division</title>
 </head>
 <body>
-    <!-- <div class="login"></div> -->
+    <!-- START LOAD -->
+    <div class="loading">
+        <div class="half-circle-spinner">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+        </div>
+    </div>
+    <!-- END LOAD -->
+    <div class="scroll" id="scroll"><a href="#"><img src="images/scrol.png" alt=""></a></div>
     <header>
         <nav>
             <div class="logo">
@@ -29,7 +37,7 @@
                     <li><a href="#about">about us</a></li>
                     <li><a href="#discord">discord</a></li>
                     <li><a href="#howToJoin">howToJoin</a></li>
-                    <li><a href="#">rule</a></li>
+                    <li><a href="#rules">rules</a></li>
                     <li><a href="#">luncher</a></li>
                     <li><a href="#">sponsor</a></li>
                 </ul>
@@ -38,11 +46,11 @@
     </header>
     <div class="container">
         <div class="home">
-            <h1>The <span>D</span>ivision Roleplay <br> Server</h1>
+            <h1>The Division Roleplay <br> Server</h1>
             <h3>(anti 9hawjiya)</h3>
             <div class="btn">
-                <button>howToJoin</button>
-                <button>discord</button>
+                <button> <a href="#howToJoin">howToJoin</a></button>
+                <button><a href="#discord">discord</a></button>
             </div>
         </div>
     </div>
@@ -79,34 +87,81 @@
                 <h1 class="section-title" >discord</h1>
             </div>
             <div class="contentDiscord">
-                <div class="discordText">
+                <div class="discordText" id="discordText">
                     <h3>Join our Discord server</h3>
                     <br>
                     <p>all members will be there to chat and talk to each others and have fun </p>
                     <br>
                     <a href="https://discord.gg/mV5gWzBpUs">Join discord</a>
                 </div>
-                <div class="imgDiscord">
+                <div class="imgDiscord" id="imgDiscord">
                     <img src="images/discord.png" alt="">
                 </div>
             </div>
         </section>
     </div>
     <!-- END DISCORD -->
+    <!-- START howToJoin -->
     <div class="container" id="howToJoin">
         <section class="howToJoin">
             <div class="navTitle">
                 <h1 class="section-title" >howToJoin</h1>
             </div>
             <div class="contentJoin">
-                <h3>You need to download:</h3>
-                <ul>
-                    <li> => GTA san <a href="https://www.wifi4games.com/pc_games/GTA_SAN_ANDREAS.html" target="_blank">Click Here</a></li>
-                    <li> => MTA <a href="https://mtasa.com/" target="_blank">Click Here</a></li>
-                </ul>
+                <div class="joinText">
+                <h3>You need to <span>download </span> :</h3>
+                    <ul>
+                        <li> <span class="tringle"></span> GTA san <a href="https://www.wifi4games.com/pc_games/GTA_SAN_ANDREAS.html" target="_blank">Click Here</a></li>
+                        <br>
+                        <li> <span class="tringle"></span> MTA <a href="https://mtasa.com/" target="_blank">Click Here</a></li>
+                    </ul>
+                </div>
+                <div class="joinImg">
+                    <img src="images/gtasanlg.png" alt="">
+                </div>
             </div>
         </section>
     </div>
+    <!-- END howToJoin -->
+    <!-- START RULE -->
+    <div class="navTitle">
+        <h1 class="section-title" >Rules</h1>
+    </div>
+    <div class="containerRules" id="rules">
+        <section class="rules">
+            <div class="rulesBlock">
+                <img src="images/rules.png" width="70px" alt="">
+                <h1>General</h1>
+                <a href="">comming soon...</a>
+            </div>
+            <div class="rulesBlock">
+                <img src="images/ambulance.png" width="110px" alt="">
+                <h1>EMS</h1>
+                <a href="">comming soon...</a>
+            </div>
+            <div class="rulesBlock">
+                <img src="images/police.png" alt="" width="70px">
+                <h1>POLICE</h1>
+                <a href="">comming soon...</a>
+            </div>
+            <div class="rulesBlock">
+                <img src="images/gang.png" width="110px" alt="">
+                <h1>Gang</h1>
+                <a href="">comming soon...</a>
+            </div>
+            <div class="rulesBlock">
+                <img src="images/entreprise.png" width="80px" alt="">
+                <h1>Entreprise</h1>
+                <a href="">comming soon...</a>
+            </div>
+        </section>
+    </div>
+    <!-- END RULE -->
+    <!-- START FOOTER -->
+    <footer>
+        <p>created by <a href="mailto:wassimrached404@gmail.com">Wassim Rached</a>, © Copyright The division All Rights Reserved</p>
+    </footer>
+    <!-- END FOOTER -->
     <script src="js/script.js"></script>
 </body>
 </html>
