@@ -102,9 +102,13 @@ ul {
 body {
   transition: 0.3s;
   font-family: "Zen Dots", cursive;
-  background-color: #00d4ff;
   background-attachment: fixed;
-  background-image: linear-gradient(20deg, #00d4ff -60%, #6f0979 100%);
+  /* background-image: linear-gradient(20deg, #00d4ff -60%, #6f0979 100%); */
+  /* background-image: linear-gradient(20deg, #243363 -10%, #859398 100%); */
+  /* background-image: linear-gradient(20deg, #fc354c 10%, #0abfbc 100%); */
+  /* background-image: linear-gradient(20deg, #4b6cb7 -60%, #182848 100%); */
+  /* background-image: linear-gradient(20deg, #c55858 -60%, #190a05 100%); */
+  background-image: linear-gradient(20deg, #780206 -60%, #061161 100%);
 }
 header {
   z-index: 100;
@@ -331,25 +335,35 @@ button {
   font-size: 30px;
 }
 .contentJoin h3 span {
+  text-transform: capitalize;
   color: var(--primiary-color);
-}
-.contentJoin h4 {
-  font: size 20px;
 }
 .contentJoin ul li {
   margin-left: 20px;
   line-height: 35px;
   position: relative;
 }
-.tringle {
-  line-height: 0;
-  max-height: 0;
-  max-width: 0;
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-left: 15px solid var(--secondary-color);
-  border-right: 15px solid transparent;
+.contentJoin ul li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
+.contentJoin ul li img {
+  margin-right: 20px;
+  width: 40px;
+  text-align: center;
+}
+.contentJoin ul li a {
+  margin-left: 20px;
+}
+/* .tringle {
+  height: 0;
+  width: 0;
+  border-top: 35px solid blue;
+  border-bottom: 35px solid green;
+  border-left: 35px solid var(--secondary-color);
+  border-right: 35px solid red;
+} */
 .contentJoin .joinImg {
   width: 50%;
   display: flex;
@@ -376,7 +390,7 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.103);
   width: 235px;
   height: 250px;
 }

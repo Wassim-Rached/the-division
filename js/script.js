@@ -6,7 +6,7 @@ window.addEventListener("scroll",function () {
 
     about.classList.toggle("move", window.scrollY > 0);
     header.classList.toggle("sticky", window.scrollY > 0);
-    discord.classList.toggle("move", window.scrollY > 0);
+    discord.classList.toggle("move", window.scrollY > 1100);
     scroll.classList.toggle("visible", window.scrollY > 0);
 });
 
